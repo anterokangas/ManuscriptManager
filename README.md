@@ -1,2 +1,2 @@
-# mm
+# ManuscriptManager
 Manuscript Manager
