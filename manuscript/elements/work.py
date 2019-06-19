@@ -13,7 +13,7 @@ from manuscript.elements.wait import Wait
 #
 # import manuscript.tools.audio_tools as audio_tools
 import manuscript.tools.constants as mc
-# import manuscript.tools.format as fmt
+import manuscript.tools.format as fmt
 # import manuscript.tools.play as play
 
 from manuscript.tools.subclasses import get_all_subclasses
@@ -63,7 +63,7 @@ class Work:
         self.settings = Settings(self, name=mc.SETTINGS)
         self.narrator = Role(self, name=mc.NARRATOR)
         self.break_ = Wait(self, name=mc.BREAK)
-        # book = fmt.Book()
+        book = fmt.Book()
         # self.defaults={
         #     "lang": narrator.lang,
         #     "pitch": narrator.pitch,
