@@ -4,7 +4,7 @@
 from manuscript.elements.definition import Definition
 from manuscript.elements.settings import Settings
 from manuscript.elements.role import Role
-# from manuscript.elements.wait import Wait
+from manuscript.elements.wait import Wait
 #
 # #from manuscript.language.lexer import ManuscriptLexer
 # #from manuscript.language.parser import ManuscriptParser
@@ -62,7 +62,7 @@ class Work:
         self.manuscript_as_mm = manuscript_as_mm
         self.settings = Settings(self, name=mc.SETTINGS)
         self.narrator = Role(self, name=mc.NARRATOR)
-        # Wait(self, name=mc.BREAK)
+        self.break_ = Wait(self, name=mc.BREAK)
         # book = fmt.Book()
         # self.defaults={
         #     "lang": narrator.lang,

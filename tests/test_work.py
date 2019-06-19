@@ -26,7 +26,8 @@ def test___init__():
     assert work.re_definition_allowed == {mc.SETTINGS}
     print(f"work.defined_actions={work.defined_actions}")
     assert work.defined_actions == {mc.SETTINGS: work.settings,
-                                    mc.NARRATOR: work.narrator}
+                                    mc.NARRATOR: work.narrator,
+                                    mc.BREAK: work.break_}
     assert work.manuscript_as_mm == text
 
 
@@ -35,7 +36,11 @@ def test_define_action():
     work = Work(text)
     test_action = object()
     work.define_action("Test_action", test_action)
-    assert work.defined_actions == {mc.SETTINGS: work.settings, "Test_action": test_action}
+    print(f"={work.defined_actions}")
+    assert work.defined_actions == {mc.SETTINGS: work.settings,
+                                    mc.NARRATOR: work.narrator,
+                                    mc.BREAK: work.break_,
+                                    "Test_action": test_action}
 
 
 if __name__ == "__main__":

@@ -7,7 +7,7 @@ from manuscript.tools.castings import as_is, int_
 import manuscript.tools.constants as mc
 
 
-def test___init__()
+def test___init__():
     assert_raises(TypeError, Definition)
 
     text = "Test"
@@ -22,7 +22,13 @@ def test___init__()
     ]
     assert element.__dict__.get("name", None) == "NAME"
     assert element.__dict__.get(mc.VALUES, None) == ""
-    assert work.defined_actions == {"NAME": element}
+
+    print(f"d.:work.defined_actions={work.defined_actions}")
+    assert work.defined_actions == {mc.SETTINGS: work.settings,
+                                    mc.NARRATOR: work.narrator,
+                                    mc.BREAK: work.break_,
+                                    "NAME": element}
+
 
     assert_raises(mex.MMParameterError, Definition, work, name='NAME', illegal="error")
 
