@@ -35,7 +35,7 @@ def test_define_action():
     work = Work(text)
     test_action = object()
     work.define_action("Test_action", test_action)
-    assert work.defined_actions == {"Test_action": test_action}
+    assert work.defined_actions == {mc.SETTINGS: work.settings, "Test_action": test_action}
 
 
 if __name__ == "__main__":

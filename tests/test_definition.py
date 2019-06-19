@@ -7,7 +7,7 @@ from manuscript.tools.castings import as_is, int_
 import manuscript.tools.constants as mc
 
 
-def test___init__():
+def test___init__()
     assert_raises(TypeError, Definition)
 
     text = "Test"
