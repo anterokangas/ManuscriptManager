@@ -1,4 +1,4 @@
-import pytest
+from nose.tools import assert_raises
 
 from manuscript.elements.definition import Definition
 from manuscript.elements.work import Work
@@ -8,13 +8,11 @@ import manuscript.tools.constants as mc
 
 
 def test___init__():
-    with pytest.raises(TypeError):
-        Definition()
+    assert_raises(TypeError, Definition)
 
     text = "Test"
     work = Work(text)
-    with pytest.raises(mex.MMParameterError):
-        Definition(work)
+    assert_raises(mex.MMParameterError, Definition, work)
 
     element = Definition(work, name='NAME')
     assert element.params == [
@@ -26,8 +24,7 @@ def test___init__():
     assert element.__dict__.get(mc.VALUES, None) == ""
     assert work.defined_actions == {"NAME": element}
 
-    with pytest.raises(mex.MMParameterError):
-        element = Definition(work, name='NAME', illegal="error")
+    assert_raises(mex.MMParameterError, Definition, work, name='NAME', illegal="error")
 
     class Subdef(Definition):
         COMMAND = "SUBDEF"
@@ -41,7 +38,7 @@ def test___init__():
     assert s.__dict__.get("Z", None) == "10"
 
 
-def test__repr__():
+def test___repr__():
     text = "Test"
     work = Work(text)
     d = Definition(work, name="NAME")
@@ -56,6 +53,7 @@ def test__repr__():
 def test_get_params():
     text = "Test"
     work = Work(text)
+
     class Subdef(Definition):
         COMMAND = "SUBDEF"
         params = [{"X": (as_is, None)}, {'Y': (int_, 0)}, {"Z": (str, "Y")}]
@@ -67,6 +65,28 @@ def test_get_params():
          {mc.VALUES: (str, ""), "Y": (int_, 0)},
          {"Z": (str, "Y")}]
     )
+
+
+def test_get_params_as_text():
+    text = "Test"
+    work = Work(text)
+
+    class Subdef(Definition):
+        COMMAND = "SUBDEF"
+        params = [{"X": (as_is, None)}, {'Y': (int_, 0)}, {"Z": (str, "Y")}]
+
+    s = Subdef(work, name="SNAME", X="XXX", Y="10", **{mc.VALUES: "values"})
+    assert (s.get_params_as_text() ==
+            "\nPARAMETERS OF ELEMENT: SNAME of class Subdef"
+            "\nRequired parameters"
+            "\n     X              : XXX"
+            "\n     name           : SNAME"
+            "\nOptional parameters"
+            "\n     Y              : 10"
+            "\n     __VALUES__     : values"
+            "\nDependent parameters"
+            "\n     Z              : 10")
+
 
 if __name__ == "__main__":
     test___init__()

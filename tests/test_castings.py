@@ -1,4 +1,4 @@
-import pytest
+from nose.tools import assert_raises
 
 import manuscript.exceptions as mex
 
@@ -65,14 +65,10 @@ def test_as_is():
 
 def test_int_():
     assert int_("10") == 10
-    with pytest.raises(mex.MMValueError):
-        int_("10.5")
-    with pytest.raises(mex.MMValueError):
-        int_("")
-    with pytest.raises(mex.MMValueError):
-        int_(None)
-    with pytest.raises(mex.MMValueError):
-        int_("Xyzzy")
+    assert_raises(mex.MMValueError, int_, "10.5")
+    assert_raises(mex.MMValueError, int_, "")
+    assert_raises(mex.MMValueError, int_, None)
+    assert_raises(mex.MMValueError, int_, "Xyzzy")
 
 
 def test_str_():
@@ -86,8 +82,7 @@ def test_str_():
 def test_language():
     assert language('fi') == 'fi'
     assert language('sv') == 'sv'
-    with pytest.raises(mex.MMValueError):
-        language('xyz')
+    assert_raises(mex.MMValueError, language, 'xyz')
 
 
 def test_supported_languages():

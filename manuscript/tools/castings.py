@@ -106,7 +106,7 @@ def language(lang):
         return lang
 
     raise mex.MMValueError(
-        f"*** ValueError: language code '{lang}' is not supported.\n{supported_languages()}")
+        f"*** ValueError: language code '{lang}' is not supported.\n{supported_languages_as_text()}")
 
 
 def supported_languages_as_text():
