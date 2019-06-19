@@ -53,5 +53,22 @@ def test__repr__():
     assert x.__repr__() == "X(name='XNAME')"
 
 
+def test_get_params():
+    text = "Test"
+    work = Work(text)
+    class Subdef(Definition):
+        COMMAND = "SUBDEF"
+        params = [{"X": (as_is, None)}, {'Y': (int_, 0)}, {"Z": (str, "Y")}]
+
+    s = Subdef(work, name="SNAME", X="XXX", Y="10", **{mc.VALUES: "values"})
+    print(f"get_params={s.get_params()}")
+    assert (s.get_params() ==
+        [{"name": (as_is, None), "X": (as_is, None)},
+         {mc.VALUES: (str, ""), "Y": (int_, 0)},
+         {"Z": (str, "Y")}]
+    )
+
 if __name__ == "__main__":
     test___init__()
+    test___repr__()
+    test_get_params()
