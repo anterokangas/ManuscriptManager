@@ -62,23 +62,23 @@ class Work:
         self.manuscript_as_mm = manuscript_as_mm
         self.settings = Settings(self, name=mc.SETTINGS)
         self.narrator = Role(self, name=mc.NARRATOR)
-        self.break_ = Wait(self, name=mc.BREAK)
+        self.break_ = Wait(self, name=mc.BREAK)  # (saving break makes testing easier)
         book = fmt.Book()
-        # self.defaults={
-        #     "lang": narrator.lang,
-        #     "pitch": narrator.pitch,
-        #     "speed": narrator.speed,
-        #     "gain": narrator.gain
-        # }
-        # self.paragraphs = [
-        #     Role(self, name="title", **fmt.merge(book.par_title, self.defaults)),
-        #     Role(self, name="title_line", **fmt.merge(book.par_title_line, self.defaults)),
-        #     Role(self, name="synopsis", **fmt.merge(book.par_synopsis, self.defaults)),
-        #     Role(self, name="header", **fmt.merge(book.par_header, self.defaults)),
-        #     Role(self, name="parenthesis", **fmt.merge(book.par_parenthesis, self.defaults)),
-        #     Role(self, name="name", **fmt.merge(book.par_name, self.defaults)),
-        #     Role(self, name="reply", **fmt.merge(book.par_reply, self.defaults)),
-        # ]
+        self.defaults = {
+            "lang": self.narrator.lang,
+            "pitch": self.narrator.pitch,
+            "speed": self.narrator.speed,
+            "gain": self.narrator.gain
+        }
+        self.paragraphs = [
+            Role(self, name="title", **fmt.merge(book.par_title, self.defaults)),
+            Role(self, name="title_line", **fmt.merge(book.par_title_line, self.defaults)),
+            Role(self, name="synopsis", **fmt.merge(book.par_synopsis, self.defaults)),
+            Role(self, name="header", **fmt.merge(book.par_header, self.defaults)),
+            Role(self, name="parenthesis", **fmt.merge(book.par_parenthesis, self.defaults)),
+            Role(self, name="name", **fmt.merge(book.par_name, self.defaults)),
+            Role(self, name="reply", **fmt.merge(book.par_reply, self.defaults)),
+        ]
 
 
         # TODO: update pargaraph-Roles' lang-like when Settings is updated

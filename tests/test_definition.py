@@ -27,6 +27,13 @@ def test___init__():
     assert work.defined_actions == {mc.SETTINGS: work.settings,
                                     mc.NARRATOR: work.narrator,
                                     mc.BREAK: work.break_,
+                                    "title": work.paragraphs[0],
+                                    "title_line": work.paragraphs[1],
+                                    "synopsis": work.paragraphs[2],
+                                    "header": work.paragraphs[3],
+                                    "parenthesis": work.paragraphs[4],
+                                    "name": work.paragraphs[5],
+                                    "reply": work.paragraphs[6],
                                     "NAME": element}
 
 
