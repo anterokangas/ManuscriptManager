@@ -38,17 +38,6 @@ class Work:
     -------------
     """
 
-    # The defining actions are subclassess of Definition having _COMMAND
-    defining_actions = {}
-    for subclass in get_all_subclasses(Definition):
-        if 'COMMAND' in subclass.__dict__.keys():
-            defining_actions[subclass.COMMAND] = subclass
-
-    # Set of names whose re-definition is allowed
-    re_definition_allowed = {mc.SETTINGS}
-
-    # Initialize default defined actions
-    defined_actions = {}
 
     def __init__(self, manuscript_as_mm):
         """ Initialize and make a new work
@@ -59,6 +48,18 @@ class Work:
         (4) Make lexical analysis and parse manuscript
         (5) create audio
         """
+        # The defining actions are subclassess of Definition having class attribute COMMAND
+        self.defining_actions = {}
+        for subclass in get_all_subclasses(Definition):
+            if 'COMMAND' in subclass.__dict__.keys():
+                self.defining_actions[subclass.COMMAND] = subclass
+
+        # Set of names whose re-definition is allowed
+        self.re_definition_allowed = {mc.SETTINGS}
+
+        # Initialize default defined actions
+        self.defined_actions = {}
+
         self.manuscript_as_mm = manuscript_as_mm
         # self.settings = Settings(self, name=mc.SETTINGS)
         # narrator = Role(self, name=mc.NARRATOR)
@@ -120,10 +121,10 @@ class Work:
     #     for key, value in kwargs.items():
     #         Work.set_attributes(key, value)
     #
-    @staticmethod
-    def define_action(action_name, object_):
+    #@staticmethod
+    def define_action(self, action_name, object_):
         """ Add new defined action """
-        Work.defined_actions[action_name] = object_
+        self.defined_actions[action_name] = object_
     #
     # def export_audio(self):
     #     if self.audio is None:

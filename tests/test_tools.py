@@ -1,8 +1,6 @@
 from manuscript.tools.subclasses import get_all_subclasses
 
 
-
-
 def test_get_all_subclasses():
     class A:
         pass

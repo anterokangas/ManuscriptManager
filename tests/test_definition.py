@@ -92,3 +92,4 @@ if __name__ == "__main__":
     test___init__()
     test___repr__()
     test_get_params()
+    test_get_params_as_text()
