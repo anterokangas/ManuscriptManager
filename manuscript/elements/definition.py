@@ -14,7 +14,6 @@ class Definition:
               {mc.VALUES: (str, "")},    # Optional, default value given
               {}]                        # Optional, default value from other attribute or if not then from settings
 
-
     def __init__(self, work, *args, **kwargs):
         """ The final super().__init__()
 

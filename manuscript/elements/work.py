@@ -120,10 +120,10 @@ class Work:
     #     for key, value in kwargs.items():
     #         Work.set_attributes(key, value)
     #
-    # @staticmethod
-    # def define_action(action_name, object_):
-    #     """ Add new defined action """
-    #     Work.defined_actions[action_name] = object_
+    @staticmethod
+    def define_action(action_name, object_):
+        """ Add new defined action """
+        Work.defined_actions[action_name] = object_
     #
     # def export_audio(self):
     #     if self.audio is None:
