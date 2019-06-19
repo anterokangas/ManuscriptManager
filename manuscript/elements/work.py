@@ -3,7 +3,7 @@
 #
 from manuscript.elements.definition import Definition
 from manuscript.elements.settings import Settings
-# from manuscript.elements.role import Role
+from manuscript.elements.role import Role
 # from manuscript.elements.wait import Wait
 #
 # #from manuscript.language.lexer import ManuscriptLexer
@@ -38,7 +38,6 @@ class Work:
     -------------
     """
 
-
     def __init__(self, manuscript_as_mm):
         """ Initialize and make a new work
 
@@ -62,7 +61,7 @@ class Work:
 
         self.manuscript_as_mm = manuscript_as_mm
         self.settings = Settings(self, name=mc.SETTINGS)
-        # narrator = Role(self, name=mc.NARRATOR)
+        self.narrator = Role(self, name=mc.NARRATOR)
         # Wait(self, name=mc.BREAK)
         # book = fmt.Book()
         # self.defaults={
@@ -127,6 +126,21 @@ class Work:
         self.defined_actions[action_name] = object_
         if action_name == mc.SETTINGS:
             self.settings = object_
+
+    @property
+    def settings(self):
+        return self._settings
+
+    @settings.setter
+    def settings(self, the_settings):
+        self._settings = the_settings
+
+        # if narrator has been defined, fix its language
+        try:
+            self.narrator.lang = self.settings.default_lang
+        except AttributeError:
+            pass
+
     #
     # def export_audio(self):
     #     if self.audio is None:

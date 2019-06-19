@@ -36,8 +36,8 @@ def test__init__():
             )
 
     Settings(work, default_lang="sv")
-    print(f"work.settings.default_lang={work.settings.default_lang}")
     assert work.settings.default_lang == "sv"
+    assert work.narrator.lang == work.settings.default_lang
 
 
 if __name__ == "__main__":

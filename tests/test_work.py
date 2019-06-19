@@ -16,8 +16,6 @@ from manuscript.elements.work import Work
 def test___init__():
     text = "Manuscript"
     work = Work(text)
-    print(f"work.defining_actions={work.defining_actions}")
-
     # This complicated test is because othere tests may add extra subclasses
     # to defining actions
     assert "SUBDEFA" in work.defining_actions
@@ -26,7 +24,9 @@ def test___init__():
     assert work.defining_actions["SUBDEFB"] == SubDefB
 
     assert work.re_definition_allowed == {mc.SETTINGS}
-    assert work.defined_actions == {}
+    print(f"work.defined_actions={work.defined_actions}")
+    assert work.defined_actions == {mc.SETTINGS: work.settings,
+                                    mc.NARRATOR: work.narrator}
     assert work.manuscript_as_mm == text
 
 
