@@ -2,7 +2,7 @@
 # import copy
 #
 from manuscript.elements.definition import Definition
-# from manuscript.elements.settings import Settings
+from manuscript.elements.settings import Settings
 # from manuscript.elements.role import Role
 # from manuscript.elements.wait import Wait
 #
@@ -61,7 +61,7 @@ class Work:
         self.defined_actions = {}
 
         self.manuscript_as_mm = manuscript_as_mm
-        # self.settings = Settings(self, name=mc.SETTINGS)
+        self.settings = Settings(self, name=mc.SETTINGS)
         # narrator = Role(self, name=mc.NARRATOR)
         # Wait(self, name=mc.BREAK)
         # book = fmt.Book()
@@ -125,6 +125,8 @@ class Work:
     def define_action(self, action_name, object_):
         """ Add new defined action """
         self.defined_actions[action_name] = object_
+        if action_name == mc.SETTINGS:
+            self.settings = object_
     #
     # def export_audio(self):
     #     if self.audio is None:
