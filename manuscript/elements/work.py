@@ -5,9 +5,9 @@ from manuscript.elements.definition import Definition
 from manuscript.elements.settings import Settings
 from manuscript.elements.role import Role
 from manuscript.elements.wait import Wait
-#
-# #from manuscript.language.lexer import ManuscriptLexer
-# #from manuscript.language.parser import ManuscriptParser
+
+from manuscript.mmlanguage.lexer import ManuscriptLexer
+from manuscript.mmlanguage.parser import ManuscriptParser
 #
 # from manuscript.messages.messages import message_text
 #
@@ -172,14 +172,14 @@ class Work:
     #         if params.get(mc.SOUND, "") == "":
     #             the_audio = audio_tools.append(the_audio, sound)
     #     return the_audio
-    #
-    # def definition_allowed(self, name):
-    #     """  Decides can 'name' be defined or re-defined  """
-    #     return (name != ""
-    #                 and name not in self.defining_actions.keys()
-    #                 and name not in self.defined_actions.keys()
-    #             or name in self.re_definition_allowed)
-    #
+
+    def definition_allowed(self, name):
+        """  Decides can 'name' be defined or re-defined  """
+        return (name != ""
+                    and name not in self.defining_actions.keys()
+                    and name not in self.defined_actions.keys()
+                or name in self.re_definition_allowed)
+
     # def play(self):
     #     print(f"work play {self.audio} {len(self.audio)}")
     #     play.play_sound(self.audio)

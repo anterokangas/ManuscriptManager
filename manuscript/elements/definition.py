@@ -31,7 +31,6 @@ class Definition:
         -------
         None
         """
-
         self.work = work
         self.params = self.get_params()  # Complete params
 
