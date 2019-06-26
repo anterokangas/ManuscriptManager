@@ -1,3 +1,5 @@
+import copy
+
 from manuscript.tools.castings import as_is
 import manuscript.tools.constants as mc
 import manuscript.exceptions as mex
@@ -31,6 +33,7 @@ class Definition:
         -------
         None
         """
+        # print(f"Create element: {kwargs.get('name', None)}")
         self.work = work
         self.params = self.get_params()  # Complete params
 
@@ -104,3 +107,32 @@ class Definition:
                 value = self.__dict__.get(key, None)
                 result += f"\n{' ':5}{key:{length}}: {value}"
         return result
+
+    def copy(self, **kwargs):
+        """ Copy object and set new values from kwargs """
+        me = copy.copy(self)
+
+        for key, value in kwargs.items():
+
+            # Check reserved parameters
+            if key in self.reserved_names:
+                raise mex.MMParameterError(f"*** Illegal parameter: '{key}'.")
+            if key not in vars(me):
+                raise mex.MMParameterError(f"*** '{value}' tried to set non defined attribute '{key}'")
+
+            # Required parameters == params[0] are not allowed to be overridden
+            if key in self.params[0] and value is not None:
+                raise mex.MMParameterError(f"*** '{key}' tried to override required attribute '{key}'")
+            #
+            # Find conversion function and set attribute
+            # Order: try first required [0] then optional [1]
+            # and finally dependent [2).
+            # If not found use ("", (str, ""))
+            #
+            func = self.params[0].get(
+                key, self.params[1].get(
+                    key, self.params[2].get(
+                        key, ("", (str, "")))))[0]
+
+            setattr(me, key, func(value))
+        return me

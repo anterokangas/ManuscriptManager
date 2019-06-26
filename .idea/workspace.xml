@@ -2,17 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b0ba519-d6cb-4346-bd0d-93bb3e353bb9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manuscript/messages.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manuscript/mmlanguage/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manuscript/mmlanguage/lexer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manuscript/mmlanguage/parser.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manuscript/mmlanguage/process_command.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manuscript/tools/counter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_lexer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_parser.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manuscript/tools/audio_tools.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/pytest.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/ManuscriptManager.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ManuscriptManager.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manuscript/elements/definition.py" beforeDir="false" afterPath="$PROJECT_DIR$/manuscript/elements/definition.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manuscript/elements/role.py" beforeDir="false" afterPath="$PROJECT_DIR$/manuscript/elements/role.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manuscript/elements/sound.py" beforeDir="false" afterPath="$PROJECT_DIR$/manuscript/elements/sound.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manuscript/elements/work.py" beforeDir="false" afterPath="$PROJECT_DIR$/manuscript/elements/work.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manuscript/messages.py" beforeDir="false" afterPath="$PROJECT_DIR$/manuscript/messages.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_parser.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_parser.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_work.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_work.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,26 +23,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.24495848">
+    <splitter split-orientation="horizontal" split-proportion="0.13167259">
       <split-first>
-        <leaf>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/manuscript/tools/castings.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="419">
-                  <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
-                  <folding>
-                    <element signature="e#17#29#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/manuscript/tools/constants.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="331">
-                  <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+                <state relative-caret-position="527">
+                  <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
                 </state>
               </provider>
             </entry>
@@ -51,30 +41,44 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/manuscript/elements/settings.py">
+            <entry file="file://$PROJECT_DIR$/manuscript/mmlanguage/lexer.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="833">
-                  <caret line="49" column="36" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
+                <state relative-caret-position="935">
+                  <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
                   <folding>
-                    <element signature="e#0#53#0" expanded="true" />
+                    <element signature="e#44#65#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/manuscript/tools/subclasses.py">
+            <entry file="file://$PROJECT_DIR$/tests/pytest.ini">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="306">
-                  <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+                <state relative-caret-position="34">
+                  <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/manuscript/elements/settings.py">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/manuscript/tools/subclasses.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="306">
+                  <caret line="18" selection-start-line="18" selection-end-line="18" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tests/test_definition.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="68">
+                <state relative-caret-position="493">
                   <caret line="35" column="64" selection-start-line="35" selection-start-column="64" selection-end-line="35" selection-end-column="64" />
                   <folding>
                     <element signature="e#0#36#0" expanded="true" />
@@ -86,8 +90,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/tests/test_settings.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="629">
-                  <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+                <state relative-caret-position="544">
+                  <caret line="34" selection-start-line="34" selection-end-line="34" />
                   <folding>
                     <element signature="e#1#42#0" expanded="true" />
                   </folding>
@@ -104,13 +108,13 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/tests/test_work.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="353">
-                  <caret line="36" column="63" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
+                <state relative-caret-position="143">
+                  <caret line="75" column="18" lean-forward="true" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
                   <folding>
-                    <element signature="e#0#53#0" expanded="true" />
+                    <element signature="e#6#59#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -119,28 +123,16 @@
         </leaf>
       </split-first>
       <split-second>
-        <splitter split-orientation="horizontal" split-proportion="0.62649006">
+        <splitter split-orientation="horizontal" split-proportion="0.5840164">
           <split-first>
-            <leaf>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/manuscript/elements/definition.py">
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+              <file pinned="false" current-in-tab="true">
+                <entry file="file://$PROJECT_DIR$/manuscript/tools/audio_tools.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="262">
-                      <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+                    <state relative-caret-position="92">
+                      <caret line="13" column="57" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
                       <folding>
-                        <element signature="e#0#43#0" expanded="true" />
-                      </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/manuscript/mmlanguage/lexer.py">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="353">
-                      <caret line="64" column="20" lean-forward="true" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
-                      <folding>
-                        <element signature="e#44#65#0" expanded="true" />
+                        <element signature="e#28#37#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
@@ -149,24 +141,29 @@
               <file pinned="false" current-in-tab="false">
                 <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/nose/case.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="198">
+                    <state relative-caret-position="3230">
                       <caret line="197" selection-start-line="197" selection-end-line="197" />
                     </state>
                   </provider>
                 </entry>
               </file>
               <file pinned="false" current-in-tab="false">
-                <entry file="file://$PROJECT_DIR$/tests/parser.out">
+                <entry file="file://$PROJECT_DIR$/manuscript/elements/definition.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="-2244" />
+                    <state relative-caret-position="1061">
+                      <caret line="85" column="22" lean-forward="true" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
+                      <folding>
+                        <element signature="e#0#11#0" expanded="true" />
+                      </folding>
+                    </state>
                   </provider>
                 </entry>
               </file>
               <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/manuscript/mmlanguage/parser.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="228">
-                      <caret line="70" column="25" lean-forward="true" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+                    <state relative-caret-position="102">
+                      <caret line="59" selection-start-line="59" selection-end-line="59" />
                       <folding>
                         <element signature="e#41#63#0" expanded="true" />
                       </folding>
@@ -177,11 +174,8 @@
               <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/manuscript/mmlanguage/process_command.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="197">
-                      <caret line="58" column="81" selection-start-line="58" selection-start-column="81" selection-end-line="58" selection-end-column="81" />
-                      <folding>
-                        <element signature="e#0#53#0" expanded="true" />
-                      </folding>
+                    <state relative-caret-position="446">
+                      <caret line="91" selection-start-line="91" selection-end-line="91" />
                     </state>
                   </provider>
                 </entry>
@@ -189,41 +183,20 @@
               <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/tests/test_parser.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="221">
-                      <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-                      <folding>
-                        <element signature="e#0#4#0" expanded="true" />
-                      </folding>
+                    <state relative-caret-position="204">
+                      <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
                     </state>
                   </provider>
                 </entry>
               </file>
               <file pinned="false" current-in-tab="false">
-                <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/unittest/case.py">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="445">
-                      <caret line="58" selection-start-line="58" selection-end-line="58" />
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/manuscript/elements/work.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="123">
-                      <caret line="124" column="38" selection-start-line="124" selection-start-column="38" selection-end-line="124" selection-end-column="38" />
+                    <state relative-caret-position="149">
+                      <caret line="192" selection-start-line="192" selection-end-line="192" />
                       <folding>
-                        <element signature="e#40#93#0" expanded="true" />
+                        <element signature="e#0#21#0" expanded="true" />
                       </folding>
-                    </state>
-                  </provider>
-                </entry>
-              </file>
-              <file pinned="false" current-in-tab="false">
-                <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/sly/yacc.py">
-                  <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="445">
-                      <caret line="1936" selection-start-line="1936" selection-end-line="1936" />
                     </state>
                   </provider>
                 </entry>
@@ -231,14 +204,14 @@
             </leaf>
           </split-first>
           <split-second>
-            <leaf>
+            <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
               <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/manuscript/elements/role.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="561">
-                      <caret line="33" selection-start-line="33" selection-end-line="33" />
+                    <state relative-caret-position="2166">
+                      <caret line="145" selection-start-line="145" selection-end-line="145" />
                       <folding>
-                        <element signature="e#0#43#0" expanded="true" />
+                        <element signature="e#0#9#0" expanded="true" />
                       </folding>
                     </state>
                   </provider>
@@ -247,8 +220,8 @@
               <file pinned="false" current-in-tab="true">
                 <entry file="file://$PROJECT_DIR$/manuscript/elements/sound.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="170">
-                      <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+                    <state relative-caret-position="347">
+                      <caret line="126" column="25" lean-forward="true" selection-start-line="126" selection-start-column="25" selection-end-line="126" selection-end-column="25" />
                       <folding>
                         <element signature="e#0#53#0" expanded="true" />
                       </folding>
@@ -259,8 +232,8 @@
               <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/tests/test_role.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="212">
-                      <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+                    <state relative-caret-position="476">
+                      <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
                       <folding>
                         <element signature="e#0#36#0" expanded="true" />
                       </folding>
@@ -271,7 +244,7 @@
               <file pinned="false" current-in-tab="false">
                 <entry file="file://$PROJECT_DIR$/tests/test_sound.py">
                   <provider selected="true" editor-type-id="text-editor">
-                    <state relative-caret-position="248">
+                    <state relative-caret-position="272">
                       <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
                       <folding>
                         <element signature="e#0#36#0" expanded="true" />
@@ -299,13 +272,20 @@
       <find>raises</find>
       <find>with pytest.raises(</find>
       <find>mi</find>
-      <find>with pytest.</find>
       <find>message</find>
       <find>commnd</find>
       <find>find_col</find>
       <find>defined_action</find>
       <find>defined_actions</find>
+      <find>with pytest.</find>
       <find>unique</find>
+      <find>***define</find>
+      <find>Create</find>
+      <find>Create element</find>
+      <find>Cr</find>
+      <find>work.settings</find>
+      <find>p_c</find>
+      <find>reverse_audio</find>
     </findStrings>
     <replaceStrings>
       <replace>pytest.raises</replace>
@@ -326,10 +306,7 @@
         <option value="$PROJECT_DIR$/manuscript/tools/castings.py" />
         <option value="$PROJECT_DIR$/tests/test_tools.py" />
         <option value="$PROJECT_DIR$/tests/subdefinitions.py" />
-        <option value="$PROJECT_DIR$/manuscript/elements/settings.py" />
         <option value="$PROJECT_DIR$/tests/test_sound.py" />
-        <option value="$PROJECT_DIR$/manuscript/elements/sound.py" />
-        <option value="$PROJECT_DIR$/manuscript/elements/role.py" />
         <option value="$PROJECT_DIR$/tests/test_role.py" />
         <option value="$PROJECT_DIR$/tests/test_settings.py" />
         <option value="$PROJECT_DIR$/manuscript/elements/wait.py" />
@@ -337,25 +314,30 @@
         <option value="$PROJECT_DIR$/tests/test_format.py" />
         <option value="$PROJECT_DIR$/manuscript/tools/box_text.py" />
         <option value="$PROJECT_DIR$/tests/test_box_text.py" />
-        <option value="$PROJECT_DIR$/tests/test_work.py" />
         <option value="$PROJECT_DIR$/tests/test_definition.py" />
-        <option value="$PROJECT_DIR$/manuscript/messages.py" />
         <option value="$PROJECT_DIR$/manuscript/tools/counter.py" />
         <option value="$PROJECT_DIR$/tests/test_lexer.py" />
         <option value="$PROJECT_DIR$/manuscript/mmlanguage/lexer.py" />
-        <option value="$PROJECT_DIR$/tests/test_parser.py" />
         <option value="$PROJECT_DIR$/manuscript/mmlanguage/process_command.py" />
         <option value="$PROJECT_DIR$/manuscript/mmlanguage/parser.py" />
+        <option value="$PROJECT_DIR$/manuscript/messages.py" />
+        <option value="$PROJECT_DIR$/manuscript/elements/settings.py" />
+        <option value="$PROJECT_DIR$/manuscript/elements/role.py" />
         <option value="$PROJECT_DIR$/manuscript/elements/definition.py" />
+        <option value="$PROJECT_DIR$/tests/test_parser.py" />
+        <option value="$PROJECT_DIR$/tests/pytest.ini" />
         <option value="$PROJECT_DIR$/manuscript/elements/work.py" />
+        <option value="$PROJECT_DIR$/tests/test_work.py" />
+        <option value="$PROJECT_DIR$/manuscript/elements/sound.py" />
+        <option value="$PROJECT_DIR$/manuscript/tools/audio_tools.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1597" />
-    <option name="y" value="-13" />
-    <option name="width" value="1364" />
-    <option name="height" value="728" />
+    <option name="x" value="1334" />
+    <option name="y" value="-5" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -411,7 +393,7 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/manuscript/tools" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -437,8 +419,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Nosetests for test_parser">
-    <configuration name="lexer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+  <component name="RunManager" selected="Python tests.pytest for test_work.test___init__2">
+    <configuration name="test_parser" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="ManuscriptManager" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -446,68 +428,17 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/manuscript/mmlanguage" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manuscript/mmlanguage/lexer.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/tests/test_parser.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="parser" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="ManuscriptManager" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/manuscript/mmlanguage" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/manuscript/mmlanguage/parser.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Nosetests for test_lexer.test_comments" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
-      <module name="ManuscriptManager" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_regexPattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_lexer.test_comments&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Nosetests for test_lexer.test_ignores" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
-      <module name="ManuscriptManager" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_regexPattern" value="&quot;&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_lexer.test_ignores&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <configuration name="Nosetests for test_parser" type="tests" factoryName="Nosetests" temporary="true">
@@ -525,20 +456,65 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Nosetests in test_parser.py" type="tests" factoryName="Nosetests" temporary="true" nameIsGenerated="true">
+      <module name="ManuscriptManager" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_regexPattern" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_parser.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_work.test___init__" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="ManuscriptManager" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_work.test___init__&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pytest for test_work.test___init__2" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="ManuscriptManager" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_work.test___init__2&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <list>
-      <item itemvalue="Python.lexer" />
-      <item itemvalue="Python.parser" />
-      <item itemvalue="Python tests.Nosetests for test_lexer.test_ignores" />
-      <item itemvalue="Python tests.Nosetests for test_lexer.test_comments" />
+      <item itemvalue="Python.test_parser" />
       <item itemvalue="Python tests.Nosetests for test_parser" />
+      <item itemvalue="Python tests.Nosetests in test_parser.py" />
+      <item itemvalue="Python tests.pytest for test_work.test___init__" />
+      <item itemvalue="Python tests.pytest for test_work.test___init__2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest for test_work.test___init__2" />
+        <item itemvalue="Python tests.pytest for test_work.test___init__" />
+        <item itemvalue="Python.test_parser" />
+        <item itemvalue="Python tests.Nosetests in test_parser.py" />
         <item itemvalue="Python tests.Nosetests for test_parser" />
-        <item itemvalue="Python.parser" />
-        <item itemvalue="Python.lexer" />
-        <item itemvalue="Python tests.Nosetests for test_lexer.test_comments" />
-        <item itemvalue="Python tests.Nosetests for test_lexer.test_ignores" />
       </list>
     </recent_temporary>
   </component>
@@ -563,35 +539,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Nosetests_for_test_parser_test_commands - 2019.06.20 at 12h 47m 52s.xml">
-      <configuration name="Nosetests for test_parser.test_commands" configurationId="tests" />
+    <history-entry file="pytest_for_test_work_test___init__2 - 2019.06.26 at 17h 28m 23s.xml">
+      <configuration name="pytest for test_work.test___init__2" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_for_test_parser_test_commands - 2019.06.20 at 12h 50m 56s.xml">
-      <configuration name="Nosetests for test_parser.test_commands" configurationId="tests" />
+    <history-entry file="pytest_for_test_work_test___init__2 - 2019.06.26 at 17h 28m 57s.xml">
+      <configuration name="pytest for test_work.test___init__2" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_for_test_parser_test_commands - 2019.06.20 at 12h 51m 38s.xml">
-      <configuration name="Nosetests for test_parser.test_commands" configurationId="tests" />
+    <history-entry file="pytest_for_test_work_test___init__2 - 2019.06.26 at 17h 29m 29s.xml">
+      <configuration name="pytest for test_work.test___init__2" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_for_test_parser_test_commands - 2019.06.20 at 12h 52m 47s.xml">
-      <configuration name="Nosetests for test_parser.test_commands" configurationId="tests" />
+    <history-entry file="pytest_for_test_work_test___init__2 - 2019.06.26 at 17h 30m 02s.xml">
+      <configuration name="pytest for test_work.test___init__2" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_for_test_parser_test_commands - 2019.06.20 at 12h 54m 57s.xml">
-      <configuration name="Nosetests for test_parser.test_commands" configurationId="tests" />
+    <history-entry file="pytest_for_test_work_test___init__2 - 2019.06.26 at 17h 30m 40s.xml">
+      <configuration name="pytest for test_work.test___init__2" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_for_test_parser_test_commands - 2019.06.20 at 12h 55m 55s.xml">
-      <configuration name="Nosetests for test_parser.test_commands" configurationId="tests" />
+    <history-entry file="pytest_for_test_work_test___init__2 - 2019.06.26 at 17h 32m 57s.xml">
+      <configuration name="pytest for test_work.test___init__2" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_for_test_parser_test_commands - 2019.06.20 at 12h 58m 18s.xml">
-      <configuration name="Nosetests for test_parser.test_commands" configurationId="tests" />
+    <history-entry file="pytest_for_test_work_test___init__2 - 2019.06.26 at 17h 37m 11s.xml">
+      <configuration name="pytest for test_work.test___init__2" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_for_test_parser_test_commands - 2019.06.20 at 12h 58m 51s.xml">
-      <configuration name="Nosetests for test_parser.test_commands" configurationId="tests" />
+    <history-entry file="pytest_for_test_work_test___init__2 - 2019.06.26 at 17h 40m 57s.xml">
+      <configuration name="pytest for test_work.test___init__2" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_for_test_parser - 2019.06.20 at 13h 01m 42s.xml">
-      <configuration name="Nosetests for test_parser" configurationId="tests" />
+    <history-entry file="pytest_for_test_work_test___init__2 - 2019.06.26 at 17h 48m 29s.xml">
+      <configuration name="pytest for test_work.test___init__2" configurationId="tests" />
     </history-entry>
-    <history-entry file="Nosetests_for_test_parser - 2019.06.20 at 13h 02m 19s.xml">
-      <configuration name="Nosetests for test_parser" configurationId="tests" />
+    <history-entry file="pytest_for_test_work_test___init__2 - 2019.06.26 at 17h 50m 39s.xml">
+      <configuration name="pytest for test_work.test___init__2" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -607,20 +583,20 @@
     <frame x="1358" y="-1" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11169652" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11169652" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Python Console" weight="0.32936078" />
-      <window_info anchor="bottom" id="Terminal" weight="0.34019503" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.42795232" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.42795232" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3997833" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.34019503" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -654,7 +630,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tests/test_work.py</url>
-          <line>15</line>
+          <line>17</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -668,26 +644,6 @@
     <entry file="file://$PROJECT_DIR$/tests/.pytest_cache/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/manuscript/exceptions.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manuscript/tools/castings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
-          <folding>
-            <element signature="e#17#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_castings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="202">
@@ -698,67 +654,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/subdefinitions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" lean-forward="true" selection-start-line="2" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manuscript/tools/subclasses.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manuscript/elements/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="36" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manuscript/tools/constants.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="31" column="17" lean-forward="true" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="37" column="37" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
-          <folding>
-            <element signature="e#1#42#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_role.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_sound.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/subdefinitions.py" />
     <entry file="file://$PROJECT_DIR$/manuscript/elements/wait.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -803,47 +699,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_work.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="36" column="63" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/test_definition.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="35" column="64" selection-start-line="35" selection-start-column="64" selection-end-line="35" selection-end-column="64" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manuscript/messages.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="109" column="5" selection-start-line="109" selection-start-column="5" selection-end-line="109" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/manuscript/tools/counter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manuscript/elements/role.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-          <folding>
-            <element signature="e#0#43#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -861,43 +720,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/nose/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="197" selection-start-line="197" selection-end-line="197" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/unittest/case.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="445">
           <caret line="58" selection-start-line="58" selection-end-line="58" />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manuscript/mmlanguage/lexer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="64" column="20" lean-forward="true" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
-          <folding>
-            <element signature="e#44#65#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manuscript/elements/sound.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="14" lean-forward="true" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tests/parser.out">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2244" />
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/sly/yacc.py">
@@ -907,52 +734,199 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manuscript/mmlanguage/process_command.py">
+    <entry file="file://$PROJECT_DIR$/tests/parser.out">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="58" column="81" selection-start-line="58" selection-start-column="81" selection-end-line="58" selection-end-column="81" />
+        <state relative-caret-position="-1581" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manuscript/tools/castings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1649">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
           <folding>
-            <element signature="e#0#53#0" expanded="true" />
+            <element signature="e#17#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manuscript/mmlanguage/parser.py">
+    <entry file="file://$PROJECT_DIR$/manuscript/tools/constants.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="70" column="25" lean-forward="true" selection-start-line="70" selection-start-column="25" selection-end-line="70" selection-end-column="25" />
+        <state relative-caret-position="527">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manuscript/exceptions.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manuscript/tools/subclasses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_definition.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="35" column="64" selection-start-line="35" selection-start-column="64" selection-end-line="35" selection-end-column="64" />
           <folding>
-            <element signature="e#41#63#0" expanded="true" />
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#1#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/nose/case.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3230">
+          <caret line="197" selection-start-line="197" selection-end-line="197" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manuscript/messages.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_role.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="34" column="17" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_sound.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="22" column="26" selection-start-line="22" selection-start-column="26" selection-end-line="22" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/test_parser.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        <state relative-caret-position="204">
+          <caret line="62" column="18" selection-start-line="62" selection-start-column="18" selection-end-line="62" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manuscript/elements/settings.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manuscript/mmlanguage/lexer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
           <folding>
-            <element signature="e#0#4#0" expanded="true" />
+            <element signature="e#44#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/pytest.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="30" selection-start-line="2" selection-start-column="30" selection-end-line="2" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manuscript/elements/role.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2166">
+          <caret line="145" selection-start-line="145" selection-end-line="145" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manuscript/elements/definition.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="32" column="11" selection-start-line="32" selection-start-column="11" selection-end-line="32" selection-end-column="11" />
+        <state relative-caret-position="1061">
+          <caret line="85" column="22" lean-forward="true" selection-start-line="85" selection-start-column="22" selection-end-line="85" selection-end-column="22" />
           <folding>
-            <element signature="e#0#43#0" expanded="true" />
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manuscript/mmlanguage/process_command.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="91" selection-start-line="91" selection-end-line="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manuscript/mmlanguage/parser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="e#41#63#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manuscript/elements/work.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="124" column="38" selection-start-line="124" selection-start-column="38" selection-end-line="124" selection-end-column="38" />
+        <state relative-caret-position="149">
+          <caret line="192" selection-start-line="192" selection-end-line="192" />
           <folding>
-            <element signature="e#40#93#0" expanded="true" />
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tests/test_work.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="75" column="18" lean-forward="true" selection-start-line="75" selection-start-column="18" selection-end-line="75" selection-end-column="18" />
+          <folding>
+            <element signature="e#6#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manuscript/elements/sound.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="126" column="25" lean-forward="true" selection-start-line="126" selection-start-column="25" selection-end-line="126" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manuscript/tools/audio_tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="13" column="57" selection-start-line="13" selection-start-column="57" selection-end-line="13" selection-end-column="57" />
+          <folding>
+            <element signature="e#28#37#0" expanded="true" />
           </folding>
         </state>
       </provider>

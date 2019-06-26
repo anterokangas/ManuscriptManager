@@ -27,7 +27,7 @@ MESSAGES = {
     "CO8010": {"en": "At line {}: Defining action '{}' - no values",
                "fi": "Rivillä {}: Määrittävä tominto '{}' ei arvoja "},
     "CO8020": {"en": "At line {}: Double{} definition {}",
-              "fi": "Rivillä {}: Toiminto {} määritelty kahdesti {}"},
+               "fi": "Rivillä {}: Toiminto {} määritelty kahdesti {}"},
 
     "ME0010": {"en": "The Mp3 file  is ready. Just listen!",
                "fi": "Mp3 tiedosto on valmis. Kuuntelepa."},
